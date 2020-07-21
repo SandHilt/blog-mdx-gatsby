@@ -2,7 +2,7 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
         margin: 0;
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={Theme}>
-    <GlobalStyle />
+    <GlobalStyles />
     {element}
   </ThemeProvider>
 )
